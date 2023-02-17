@@ -1,6 +1,5 @@
 ### Automated Program to upload a list of emails and instagram
 ### usernames to google sheets
-
 ```
 virtualenv venv
 source venv/bin/activate
@@ -25,11 +24,10 @@ Sheets id can be found in the url of a google sheet.
 
 html in the `writeEmails()` function can be edited for whatever you want.
 
-consider this code snippet to edit the `msg['Subject'] = "function test"`
-
 use mailtrap.io to test sending emails from a list of real email addresses. if not
 test this with your personal email addresses.
 
+consider this code snippet to edit the `msg['Subject'] = "function test"`
 ```
 import random
 
