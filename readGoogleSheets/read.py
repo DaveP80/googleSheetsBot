@@ -128,8 +128,6 @@ def writeEmails():
         try:
             username = ''  # Email Address from the email you want to send an email
             password = SECRET_P  # Password
-            #server = smtplib.SMTP('smtp.gmail.com')
-
             # Create the body of the message (a HTML version for formatting).
             html = """
             <!DOCTYPE html>
