@@ -25,8 +25,15 @@ Sheets id can be find in the url of a google sheet.
 
 html in the `writeEmails()` function can be edited for whatever you want.
 
-#### program runs with
+consider this code snippet to edit the `msg['Subject'] = "function test"`
 
+```
+import random
+
+greeting = ['Hello', 'Sup', 'Howdy', 'Hi', 'Hola', 'Greetings', 'Another word from']
+random.choice(greeting) + ' company name'
+```
+#### program runs with
 ```
 python3 readGoogleSheets/read.py
 ```
