@@ -21,11 +21,14 @@ Go to google console I.am to get your data/credentials.json information
 
 fill in `readGoogleSheets/.env` with your google app security password.
 
-Sheets id can be find in the url of a google sheet.
+Sheets id can be found in the url of a google sheet.
 
 html in the `writeEmails()` function can be edited for whatever you want.
 
 consider this code snippet to edit the `msg['Subject'] = "function test"`
+
+use mailtrap.io to test sending emails from a list of real email addresses. if not
+test this with your personal email addresses.
 
 ```
 import random
