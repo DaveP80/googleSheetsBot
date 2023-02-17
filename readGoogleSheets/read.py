@@ -46,6 +46,7 @@ def main():
         service = build('sheets', 'v4', credentials=creds)
 
         # Call the Sheets API
+        # Fill in emails array with sheet and column data from your google sheet
         sheet = service.spreadsheets()
         print(sheet)
         emails = [sheet.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID, range=SAMPLE_RANGE_NAME).execute()
@@ -192,6 +193,7 @@ def insta():
             service = build('sheets', 'v4', credentials=creds)
 
             # Call the Sheets API
+            # Fill in usernames array with sheet and column data from your google sheet
             sheet = service.spreadsheets()
             print(sheet)
             usernames = [ sheet.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID, range='France!D2:D67').execute()
