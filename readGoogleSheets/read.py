@@ -125,7 +125,7 @@ def main():
             
 def writeEmails():
 
-    if os.path.exists('/leademail.csv'):
+    if os.path.exists('leademail.csv'): #full path of the leademail.csv, should be at root of projects
         try:
             username = ''  # Email Address from the email you want to send an email
             password = SECRET_P  # Password
@@ -188,10 +188,8 @@ def insta():
         if os.path.exists('credentials.json'):
             creds = None
             creds = ServiceAccountCredentials.from_json_keyfile_name('credentials.json')
-
         try:
             service = build('sheets', 'v4', credentials=creds)
-
             # Call the Sheets API
             # Fill in usernames array with sheet and column data from your google sheet
             sheet = service.spreadsheets()
@@ -236,7 +234,6 @@ def insta():
 
                 if not values:
                     print('No data found.')
-                
                 elif values:
                     for v in values:
                         for grams in v:
@@ -279,4 +276,4 @@ def updateInsta():
 
 if __name__ == '__main__':
     writeEmails()
-    updateInsta()
+    updateInsta() #the logic of the updateInsta() and insta() function are discrectionary to the developer
